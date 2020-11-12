@@ -3,6 +3,7 @@ package color
 type (
 	// HSL is a color represented by Hue, Saturation, and Lightness
 	HSL struct {
+		// H, S, L all range between (0, 1)
 		H, S, L float64
 	}
 )
