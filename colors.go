@@ -11,36 +11,36 @@ var (
 )
 
 var (
-	Black        = HSL{Min, Min, Min}
-	Grey         = HSL{Min, Min, Half}
-	GreyNatural  = HSL{Min, Min, Min}
-	White        = HSL{Min, Min, Max}
-	WhiteNatural = HSL{Min, Min, Min}
+	Black        = HSL{Min, Min, Min, Min}
+	Grey         = HSL{Min, Min, Half, Half}
+	GreyNatural  = HSL{Min, Min, Min, Half}
+	White        = HSL{Min, Min, Max, Max}
+	WhiteNatural = HSL{Min, Min, Min, Max}
 
-	Red         = HSL{Min, Max, Half}
-	WarmRed     = HSL{1.0 / 24, Max, Half}
-	Orange      = HSL{2.0 / 24, Max, Half}
-	WarmYellow  = HSL{3.0 / 24, Max, Half}
-	Yellow      = HSL{4.0 / 24, Max, Half}
-	CoolYellow  = HSL{5.0 / 24, Max, Half}
-	YellowGreen = HSL{6.0 / 24, Max, Half}
-	WarmGreen   = HSL{7.0 / 24, Max, Half}
-	Green       = HSL{8.0 / 24, Max, Half}
-	CoolGreen   = HSL{9.0 / 24, Max, Half}
-	GreenCyan   = HSL{10.0 / 24, Max, Half}
-	WarmCyan    = HSL{11.0 / 24, Max, Half}
-	Cyan        = HSL{12.0 / 24, Max, Half}
-	CoolCyan    = HSL{13.0 / 24, Max, Half}
-	BlueCyan    = HSL{14.0 / 24, Max, Half}
-	CoolBlue    = HSL{15.0 / 24, Max, Half}
-	Blue        = HSL{16.0 / 24, Max, Half}
-	WarmBlue    = HSL{17.0 / 24, Max, Half}
-	Violet      = HSL{18.0 / 24, Max, Half}
-	CoolMagenta = HSL{19.0 / 24, Max, Half}
-	Magenta     = HSL{20.0 / 24, Max, Half}
-	WarmMagenta = HSL{21.0 / 24, Max, Half}
-	RedMagenta  = HSL{22.0 / 24, Max, Half}
-	CoolRed     = HSL{23.0 / 24, Max, Half}
+	Red         = HSL{Min, Max, Half, Min}
+	WarmRed     = HSL{1.0 / 24, Max, Half, Min}
+	Orange      = HSL{2.0 / 24, Max, Half, Min}
+	WarmYellow  = HSL{3.0 / 24, Max, Half, Min}
+	Yellow      = HSL{4.0 / 24, Max, Half, Min}
+	CoolYellow  = HSL{5.0 / 24, Max, Half, Min}
+	YellowGreen = HSL{6.0 / 24, Max, Half, Min}
+	WarmGreen   = HSL{7.0 / 24, Max, Half, Min}
+	Green       = HSL{8.0 / 24, Max, Half, Min}
+	CoolGreen   = HSL{9.0 / 24, Max, Half, Min}
+	GreenCyan   = HSL{10.0 / 24, Max, Half, Min}
+	WarmCyan    = HSL{11.0 / 24, Max, Half, Min}
+	Cyan        = HSL{12.0 / 24, Max, Half, Min}
+	CoolCyan    = HSL{13.0 / 24, Max, Half, Min}
+	BlueCyan    = HSL{14.0 / 24, Max, Half, Min}
+	CoolBlue    = HSL{15.0 / 24, Max, Half, Min}
+	Blue        = HSL{16.0 / 24, Max, Half, Min}
+	WarmBlue    = HSL{17.0 / 24, Max, Half, Min}
+	Violet      = HSL{18.0 / 24, Max, Half, Min}
+	CoolMagenta = HSL{19.0 / 24, Max, Half, Min}
+	Magenta     = HSL{20.0 / 24, Max, Half, Min}
+	WarmMagenta = HSL{21.0 / 24, Max, Half, Min}
+	RedMagenta  = HSL{22.0 / 24, Max, Half, Min}
+	CoolRed     = HSL{23.0 / 24, Max, Half, Min}
 
 	AllColors = []Color{
 		Red,

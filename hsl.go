@@ -3,8 +3,8 @@ package color
 type (
 	// HSL is a color represented by Hue, Saturation, and Lightness
 	HSL struct {
-		// H, S, L all range between (0, 1)
-		H, S, L float64
+		// H, S, L, A all range between (0, 1)
+		H, S, L, A float64
 	}
 )
 
@@ -41,7 +41,7 @@ func (c HSL) RGB() RGB {
 
 	if s == 0 {
 		// it's gray
-		return RGB{l, l, l}
+		return RGB{l, l, l, c.A}
 	}
 
 	var v1, v2 float64
@@ -57,7 +57,7 @@ func (c HSL) RGB() RGB {
 	g := hueToRGB(v1, v2, h)
 	b := hueToRGB(v1, v2, h-(1.0/3.0))
 
-	return RGB{r, g, b}
+	return RGB{r, g, b, c.A}
 }
 
 // SetHue will change hue to h (with wrapping).
