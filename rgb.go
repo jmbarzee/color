@@ -67,9 +67,9 @@ func (c RGB) RGB() RGB {
 	return c
 }
 
-// ToUInt32WRGB converts an RGBA to a uint32.
+// ToUInt32RGBW converts an RGBA to a uint32.
 // Each portion of the color is represented by 8 bits
-func (c RGB) ToUInt32WRGB() uint32 {
+func (c RGB) ToUInt32RGBW() uint32 {
 	val := uint32(c.R*math.MaxUint8) << 0
 	val |= uint32(c.G*math.MaxUint8) << 8
 	val |= uint32(c.B*math.MaxUint8) << 16
@@ -77,9 +77,9 @@ func (c RGB) ToUInt32WRGB() uint32 {
 	return val
 }
 
-// FromUInt32WRGB converts and uint32 to an RGBA.
+// FromUInt32RGBW converts and uint32 to an RGBA.
 // Each portion of the color is represented by 8 bits
-func FromUInt32WRGB(wgrb uint32) RGB {
+func FromUInt32RGBW(wgrb uint32) RGB {
 	mask := uint32(0x000000ff)
 
 	uint8r := mask & (wgrb >> 0)
